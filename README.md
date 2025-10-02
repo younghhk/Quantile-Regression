@@ -62,9 +62,10 @@ Because $\beta(\tau)$ **depends on $\tau$**, the effect of a covariate can diffe
 
 ## More Examples in Cancer Research
 
-1. **Telomere length (continuous)**  
-   *Is the effect of sex different at the **shortest** versus **median** telomere lengths?*  
-   Quantile regression can reveal whether sex differences are larger among **short-telomere** patients (e.g., $\tau=0.10$) than around the median ($\tau=0.50$).
+1. **Is sex associated differently at _lower_ vs _higher_ telomere-length quantiles, or is the effect constant across quantiles?**  
+   *Is the effect of sex different at **short** versus **long** telomere lengths?*  
+   Quantile regression can show whether sex differences are larger at **short telomere lengths** (e.g., $\tau=0.10$) than at **long telomere lengths** (e.g., $\tau=0.90$).
+
 
 2. **Identifying CpG Sites Associated with High LINE-1 Activity (via total TE counts)**
 
@@ -76,7 +77,7 @@ Because $\beta(\tau)$ **depends on $\tau$**, the effect of a covariate can diffe
 
 
 
-3. **Survival times (with censoring)**  
+3. **Do race/ethnicity effects differ for short vs long breast cancer survival? (use censored quantile methods)**  
    *Do race/ethnicity effects differ for **short** versus **long** survival?*  
    Standard quantile regression assumes fully observed outcomes; for right-censored survival, use **censored quantile regression** or other survival-adapted quantile methods. The idea—**effects vary across survival quantiles**—still applies, but the model must handle censoring.
 
