@@ -48,10 +48,10 @@ Because $\beta(\tau)$ **depends on $\tau$**, the effect of a covariate can diffe
   - A coefficient $\beta_j(\tau)$ tells how a 1-unit change in $X_j$ **moves the $\tau$-th percentile** of $Y$ (not the mean), with other variables fixed.
 
   - **Lower tail (e.g., $\tau=0.10$):**  
-    If $\beta_j(0.10)=+0.8$, then a 1-unit increase in $X_j$ is associated with the **10th percentile** of $Y$ being **0.8 units higher** (a shift **up** in the lower end).
+    If $\beta_j(0.10)=+0.8$, then a 1-unit increase in $X_j$ is associated with the **10th percentile** of $Y$ being **0.8 units higher**.
 
   - **Upper tail (e.g., $\tau=0.90$):**  
-    If $\beta_j(0.90)=-0.2$, then a 1-unit increase in $X_j$ is associated with the **90th percentile** of $Y$ being **0.2 units lower** (a shift **down** in the upper end).
+    If $\beta_j(0.90)=-0.2$, then a 1-unit increase in $X_j$ is associated with the **90th percentile** of $Y$ being **0.2 units lower**.
 
 - **Heterogeneous effects across the distribution**
   - If $\beta_j(0.10)$ and $\beta_j(0.90)$ differ in **size or sign**, the effect of $X_j$ is **distributionally heterogeneous**—it impacts low and high values of $Y$ differently.
@@ -69,11 +69,11 @@ Because $\beta(\tau)$ **depends on $\tau$**, the effect of a covariate can diffe
 
 2. **Identifying CpG Sites Associated with High LINE-1 Activity (via total TE counts)**
 
-**Context.** LINE-1 activity is **not directly observed**. We use **total transposable-element (TE) counts** as a *proxy* outcome to infer patterns consistent with **high LINE-1 activity**, recognizing that total TE counts aggregate LINE-1 and non-LINE-1 families.
+ - LINE-1 activity is **not directly observed**. We use **total transposable-element (TE) counts** as a *proxy* outcome to infer patterns consistent with **high LINE-1 activity**, recognizing that total TE counts aggregate LINE-1 and non-LINE-1 families.
 
-**Working assumption.** Increases in LINE-1 activity tend to **raise** total TE counts (on average), so associations that appear **strongest in the upper tail** of total TE counts are informative about periods of **elevated LINE-1 activity**.
+-  Increases in LINE-1 activity tend to **raise** total TE counts (on average), so associations that appear **strongest in the upper tail** of total TE counts are informative about periods of **elevated LINE-1 activity**.
 
-**Question.** Are methylation levels at specific CpG sites associated with the **upper quantiles** of **total TE counts** (e.g., $\tau=0.80$–$0.95$)?
+- **Question.** Are methylation levels at specific CpG sites associated with the **upper quantiles** of **total TE counts** (e.g., $\tau=0.80$ – $0.95$)?
 
 
 
